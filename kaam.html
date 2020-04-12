@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer GEEKS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-end">
+            <a class="navbar-brand" href="#"><img style="width: 35px;" src="data:image/png;base64,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" alt="">Computer GEEKS</a>
+            <div class="collapse navbar-collapse flex-grow-0 ml-auto mr-1" id="navbarSupportedContent">
+                <ul class="navbar-nav text-right">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Practice</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Code Library</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    <div class="row" style="background-color: rgb(207, 204, 204);">
+        <div class="col-9">
+            <div class="container">
+                <div class="row">
+                    <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 100%;margin: 10px;">
+                        <div class="card-body">
+                        <h5 class="card-title">Problem : 1</h5>
+                        <p class="card-text">
+                            <b>Write a C++ program to print factorial of a number.</b>
+                            <br>
+                            Input:5
+                            <br> 
+                            Output:120
+                            <br>
+                            Input:6
+                            <br> 
+                            Output:720
+                            <br>
+                        </p>
+                        <a href="#" class="btn btn-primary">See More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 100%;margin: 10px;">
+                        <div class="card-body">
+                        <h5 class="card-title">Probem : 2</h5>
+                        <p class="card-text">
+                            <b>Write a C++ program to convert number into character.</b>
+                            <br>
+                            Input:74254
+                            <br>
+                            Output:Seven Four Two Five Four
+                            <br>
+                            Input:203
+                            <br>
+                            Output:Two Zero Three
+                            <br>
+                        </p>
+                        <a href="#" class="btn btn-primary">See More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary" style="margin: 10px;">Previous</button>
+            <button type="button" class="btn btn-primary float-right" style="margin: 10px;text-align: right;">Next</button>
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 100%;margin: 10px;">
+                    <div class="card-body">
+                    <h5 class="card-title">Top Rated Problems</h5> 
+                    <ol>
+                        <li><a href="">Prime Number</a></li>
+                        <li><a href="">Fibonacci Series</a></li>
+                        <li><a href="">Reverse Number</a></li>
+                        <li><a href="">Matrix Multiplication</a></li>
+                    </ol>
+                    <a href="#" class="btn btn-primary">See More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 100%;margin: 10px;">
+                    <div class="card-body">
+                    <h5 class="card-title">Top Used Languages</h5>
+                    <ol>
+                        <li><a href="">C++</a></li>
+                        <li><a href="">Python</a></li>
+                        <li><a href="">Java</a></li>
+                        <li><a href="">HTML</a></li>
+                    </ol>
+                    <a href="#" class="btn btn-primary">See More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
